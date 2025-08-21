@@ -1,5 +1,6 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ImovelDAO extends BaseDAO{
@@ -29,5 +30,30 @@ public class ImovelDAO extends BaseDAO{
         e.printStackTrace();
     }
     }
+    public void listarImoveis() {
+        String sql = "SELECT * FROM Imovel WHERE status = ?";
+        try (Connection con = con(); PreparedStatement list = con.prepareStatement(sql);) {
+            list.setString(1, "disponivel");
+            ResultSet rs = list.executeQuery();
+            int qtd = 0;
+            while (rs.next()) {
+                int id = rs.getInt("id_imovel");
+                String endereco = rs.getString("endereco");
+                String cidade = rs.getString("cidade");
+                String status = rs.getString("status");
+                System.out.println("ID: " + id +
+                        " | Endereço: " + endereco +
+                        " | Cidade: " + cidade +
+                        " | Status: " + status);
+                qtd++;
+
+            }
+            System.out.println("Encontramos: "+qtd+" imóveis");
+        } catch (Exception e) {
+            System.out.println("Não encontramos dados");
+            e.printStackTrace();
+        }
+    }
 }
+
 
