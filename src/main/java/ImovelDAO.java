@@ -37,14 +37,25 @@ public class ImovelDAO extends BaseDAO{
             ResultSet rs = list.executeQuery();
             int qtd = 0;
             while (rs.next()) {
-                int id = rs.getInt("id_imovel");
-                String endereco = rs.getString("endereco");
+                int id = rs.getInt("id");
+                String tipoImovel = rs.getString("tipo_imovel");
+                String status =rs.getString("status");
+                String cep = rs.getString("cep");
+                String estado = rs.getString("estado");
                 String cidade = rs.getString("cidade");
-                String status = rs.getString("status");
+                String bairro = rs.getString("bairro");
+                String rua = rs.getString("rua");
+                int numero = rs.getInt("numero");
+                String complemento = rs.getString("complemento");
                 System.out.println("ID: " + id +
-                        " | Endereço: " + endereco +
+                        " | Tipo imóvel: " + tipoImovel +
+                        " | Status: "+status+
+                        " | Estado:"+estado+
                         " | Cidade: " + cidade +
-                        " | Status: " + status);
+                        " | Bairro: "+bairro+
+                        " | Rua: "+rua+
+                        " | Número: "+numero+
+                        " | Complemento: " + complemento);
                 qtd++;
 
             }

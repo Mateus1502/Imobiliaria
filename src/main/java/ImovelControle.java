@@ -31,4 +31,14 @@ public class ImovelControle {
         imovel.setComplemento(scanner.nextLine());
         imo.inserirContrato(imovel);
     }
+    public void verDisponiveis(){
+        Imovel imovel = new Imovel();
+        System.out.println("Deseja ver os imóveis disponíveis?");
+        System.out.println("1-Sim");
+        System.out.println("2-Não");
+        int opcao = scanner.nextInt();
+        if(opcao ==1){
+         imo.listarImoveis();
+        }
+    }
 }
