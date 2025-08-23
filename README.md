@@ -35,4 +35,4 @@ Ao cadastrar um contrato:
 - **SQL (DDL & DML)**  
 ---
 ![Diagrama de classe](diagramaClasse.png)
-![Diagrama de MER](diagramaMER.png)
+![Diagrama de MER](DiagramaMER.png)
