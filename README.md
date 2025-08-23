@@ -18,7 +18,8 @@ As tabelas principais são:
 
 - **Cliente** → informações de clientes (nome, CPF, telefone, email).  
 - **Imovel** → dados dos imóveis (endereço, tipo, status, id_cliente).  
-- **Contrato** → contratos de aluguel ou compra vinculando cliente e imóvel.  
+- **Contrato** → contratos de aluguel ou compra vinculando cliente e imóvel.
+- **Para usar o banco, execute o dump sql disponibilizado**
 
 ### 🔄 Lógica de atualização automática  
 Ao cadastrar um contrato:  
@@ -32,7 +33,7 @@ Ao cadastrar um contrato:
 
 - **Java**
 - **MariaDB / MySQL**  
-- **SQL (DDL & DML)**  
+- **SQL**  
 ---
 ![Diagrama de classe](diagramaClasse.png)
 ![Diagrama de MER](DiagramaMER.png)
