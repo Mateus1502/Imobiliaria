@@ -35,5 +35,5 @@ Ao cadastrar um contrato:
 - **MariaDB / MySQL**  
 - **SQL**  
 ---
-![Diagrama de classe](diagramaClasse.png)
+![Diagrama de classe](diagramaClasses.png)
 ![Diagrama de MER](diagramaMER.png)
