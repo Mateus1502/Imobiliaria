@@ -5,9 +5,6 @@ public class ImovelControle {
     Scanner scanner = new Scanner(System.in);
     public void interacaoImovel(){
         Imovel imovel = new Imovel();
-        System.out.println("Informe a id do cliente que será associado a esse imovel: ");
-        imovel.setIdCliente(scanner.nextInt());
-        scanner.nextLine();
         System.out.println("Informe o tipo de imovel: ");
         imovel.setTipoImovel(scanner.nextLine());
         System.out.println("Informe o status");
@@ -39,6 +36,8 @@ public class ImovelControle {
         int opcao = scanner.nextInt();
         if(opcao ==1){
          imo.listarImoveis();
+        }else{
+            System.out.println("Obrigado por usar o sistema");
         }
     }
 }
