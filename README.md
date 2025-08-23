@@ -36,4 +36,4 @@ Ao cadastrar um contrato:
 - **SQL**  
 ---
 ![Diagrama de classe](diagramaClasse.png)
-![Diagrama de MER](DiagramaMER.png)
+![Diagrama de MER](diagramaMER.png)
